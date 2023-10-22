@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Recipe-gen</title>
+    <link rel="icon" href="fav.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Poppins', sans-serif; color: white;">
+                <b>RECIPE-DUP</b>
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#center-container">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-heading-left">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-heading-left1">Recipe Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-heading-centre">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center-container">
+        <img src="foody.jpeg" alt="Image">
+    </div>
+    <div class="vertical-box">
+        <b style="font-size: x-large; font-weight: bold;">A Novel Recipe Generation App</b>
+        <br><br>
+        Recipes are an integral part of the human lifestyle. They dictate the food we eat and our health too. It shows how technology can help in the creation of new and creative recipes by using different algorithms.
+        
+    </div>
+    <br><br><br>
+    <div id="section-heading-left" >
+        <p><b>About us</p></b>
+    </div>
+    <div class="info-box-right">
+        Cooking is the act of turning nature into the culture which has enabled the advent of the omnivorous human diet. The cultural wisdom of processing raw ingredients into delicious dishes is embodied in their cuisines. Recipes thus are the cultural capsules that encode elaborate cooking protocols for evoking sensory satiation as well as providing nourishment. As we stand on the verge of an epidemic of diet-linked disorders, it is eminently important to investigate the culinary correlates of dietary elements to probe their association with sensory responses as well as consequences for nutrition and health.<br><br><br>
+    </div>
+    <div id="class-img-left">
+    <img src="food5.jpg"></div>
+    <br><br>
+
+    <div class="info-box-left">
+        Recipes can be classified based on the preferences of the user, offering a diverse spectrum of culinary delights tailored to individual tastes. The classification can revolve around dietary choices, such as vegetarian, vegan, or omnivorous recipes, accommodating varying lifestyles and ethical considerations. Flavor profiles, including sweet, savory, spicy, or mild, provide an additional layer of categorization for those seeking specific taste experiences. Furthermore, regional and cultural influences contribute to a rich tapestry of recipe categories, showcasing global gastronomy. Special dietary needs, like gluten-free, low-carb, or keto recipes, cater to health-conscious eaters. Lastly, meal types such as breakfast, lunch, dinner, or desserts offer structured culinary options, ensuring that there is something for everyone in the world of cooking and food exploration.
+    </div>
+    <div id="class-img-right">
+        <img src="food6.jpeg"></div>
+    </div>
+    <br><br><br><br><br>
+    <br><br>
+    <div id="section-heading-left1">
+        <p><b>Recipe Search</b></p>
+    </div>
+    <div class="containerrs">
+        <div class="box">
+            <p><label for="dietary-restrictions">Dietary Restrictions:</label>
+                <select id="dietary-restrictions">
+                    <option value="None">Select dietary-restrictions</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Gluten-free">Gluten-free</option>
+                </select></p>
+        </div>
+        <br><br>
+        <div class="box">
+            <p><label for="spiciness">Spiciness:</label>
+                <select id="spiciness">
+                    <option value="none">Select Spiciness</option>
+                    <option value="Mild">Mild</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Spicy">Spicy</option>
+                </select></p>
+        </div>
+        
+        <br><br>
+        <div class="box">
+            <p><label for="allergies">Allergies:</label>
+                <select id="allergies">
+                    <option value="none">Select Allergies</option>
+                    <option value="soy">Soy</option>
+                    <option value="olives">Olives</option>
+                </select></p>
+        </div>
+        <br><br>
+        <div class="long-box">
+            <label for="ingredients">Ingredients:</label>
+         <input type="text" id="ingredient-input" list="ingredient-list" placeholder="Select up to 5 ingredients">
+                <datalist id="ingredient-list"></datalist><br>
+                <div id="selected-ingredients"></div>
+        </div>
+    
+</div>
+<div class="button-container">
+    <button type="button" onclick="filterRecipes()" class="custom-button"><b>Filter Recipes</b></button>
+</div>
+
+<div id="filtered-recipes"></div>
+    <div id="custom-popup" style="display: none;">
+        <div id="popup-content">
+            <img src="food555.jpg">
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+    
+    
+
+    <br><br><br><br>
+
+    <div id="section-heading-centre" >
+        <p><b>Contact us</b></p></div>
+    <div id="inquiry-form-box">
+        <form id="contact-form" action="#" method="post">
+            <label for="name">Name:</label>  
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+            </form>
+            <div id="response" style="display: none;">
+              <p>Thanks for your response!</p>
+            </div>
+          </div>
+        </section>
+
+
+        <script>
+            let recipesData = null;
+    
+            async function fetchRecipes() {
+                try {
+                    const response = await fetch("/Recipe-gen/recipes.json");
+                    if (response.ok) {
+                        recipesData = await response.json();
+                        populateDropdowns(recipesData.recipes);
+                    } else {
+                        console.error("Failed to fetch recipes data.");
+                    }
+                } catch (error) {
+                    console.error("An error occurred while fetching recipes:", error);
+                }
+            }
+    
+            function populateDropdowns(recipes) {
+                const dietaryRestrictions = document.getElementById("dietary-restrictions");
+                const allergies = document.getElementById("allergies");
+                const healthGoals = document.getElementById("health-goals");
+                const ingredientInput = document.getElementById("ingredient-input");
+                const selectedIngredients = document.getElementById("selected-ingredients");
+                const ingredientList = document.getElementById("ingredient-list");
+    
+    
+    
+        let selectedIngredientsArray = [];
+        let uniqueIngredientsSet = new Set(); // Store unique ingredients
+    
+        // Add a function to populate the dropdown
+        function updateIngredientDropdown() {
+            ingredientList.innerHTML = "";
+            for (const ingredient of uniqueIngredientsSet) {
+                const option = document.createElement("option");
+                option.value = ingredient;
+                ingredientList.appendChild(option);
+            }
+        }
+    
+        // Function to add a selected ingredient to the list
+        function addSelectedIngredient(ingredient) {
+            if (ingredient && selectedIngredientsArray.length < 5 && !selectedIngredientsArray.includes(ingredient)) {
+                selectedIngredientsArray.push(ingredient);
+                uniqueIngredientsSet.delete(ingredient); // Remove the selected ingredient
+                updateSelectedIngredients();
+                ingredientInput.value = ""; // Clear the input field
+                updateIngredientDropdown(); // Update the dropdown after a selection
+            }
+        }
+    
+        // Function to update the list of selected ingredients
+        function updateSelectedIngredients() {
+            selectedIngredients.innerHTML = "";
+            selectedIngredientsArray.forEach(ingredient => {
+                const ingredientItem = document.createElement("span");
+                ingredientItem.textContent = ingredient;
+                const removeButton = document.createElement("button");
+                removeButton.textContent = "✕"; // Cross sign (X)
+                removeButton.addEventListener("click", () => {
+                    selectedIngredientsArray = selectedIngredientsArray.filter(item => item !== ingredient);
+                    uniqueIngredientsSet.add(ingredient); // Add the removed ingredient back
+                    updateSelectedIngredients();
+                    updateIngredientDropdown(); // Update the dropdown after a removal
+                });
+                ingredientItem.appendChild(removeButton);
+                selectedIngredients.appendChild(ingredientItem);
+            });
+        }
+    
+        recipes.forEach(recipe => {
+            recipe.ingredients.forEach(ingredient => {
+                const value = ingredient.trim();
+                if (value.length > 0) {
+                    if (!uniqueIngredientsSet.has(value)) {
+                        uniqueIngredientsSet.add(value);
+                    }
+                }
+            });
+        });
+    
+        updateIngredientDropdown(); // Initialize the dropdown
+    
+        ingredientInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === ",") {
+                e.preventDefault();
+                addSelectedIngredient(ingredientInput.value.trim());
+            }
+        });
+    
+        // Rest of your code...
+    }
+            // function openCustomPopup(content) {
+            //     const popup = document.getElementById("custom-popup");
+            //     const popupContent = document.getElementById("popup-content");
+            //     popupContent.innerHTML = content;
+            //     popup.style.display = "block";
+            // }
+
+     function openCustomPopup(recipe,SiValue) {
+    const popup = document.getElementById("custom-popup");
+    const popupContent = document.getElementById("popup-content");
+    
+    // Clear existing content
+    popupContent.innerHTML = '';
+    
+    // Create an image element
+    const image = document.createElement("img");
+    image.src = "food555.jpg"; // Replace with your image URL
+    image.alt = "Custom Image";
+    image.style.width = "250px"; // Set the desired width
+    image.style.height = "200px";
+    popupContent.appendChild(image);
+
+    const title = document.createElement("h2");
+    title.textContent = recipe.title; 
+    popupContent.appendChild(title);
+
+   
+    const text = document.createElement("p");
+    text.innerHTML = recipe.text;
+    popupContent.appendChild(text);
+    
+    const selectedIngredientsHeading = document.createElement("h3");
+    selectedIngredientsHeading.textContent = "Selected Ingredients";
+    popupContent.appendChild(selectedIngredientsHeading);
+
+
+const selectedIngredientsList = document.createElement("ul");
+    SiValue.forEach(ingredient => {
+    const listItem = document.createElement("li");
+    listItem.textContent = ingredient;
+    selectedIngredientsList.appendChild(listItem);
+    });
+    popupContent.appendChild(selectedIngredientsList);    
+
+    // Create a heading for extra ingredients
+const extraIngredientsHeading = document.createElement("h3");
+extraIngredientsHeading.textContent = "Extra Ingredients";
+popupContent.appendChild(extraIngredientsHeading);
+
+// Create an unordered list for extra ingredients
+const extraIngredientsList = document.createElement("ul");
+
+// Find ingredients in recipe.ingredients that are not in SiValue
+const extraIngredients = recipe.ingredients.filter(ingredient => !SiValue.includes(ingredient));
+
+extraIngredients.forEach(ingredient => {
+    const listItem = document.createElement("li");
+    listItem.textContent = ingredient;
+    extraIngredientsList.appendChild(listItem);
+});
+
+popupContent.appendChild(extraIngredientsList);
+    
+    const closeButton = document.createElement("button");
+    closeButton.textContent = "✕";
+    closeButton.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+    popupContent.appendChild(closeButton);
+
+    
+    popup.style.display = "flex";
+}
+
+//             function openCustomPopup(content) {
+//         const popup = document.getElementById("custom-popup");
+//     const popupContent = document.getElementById("popup-content");
+//     popupContent.innerHTML = content;
+    
+//     const closeButton = document.createElement("button");
+//     closeButton.textContent = "✕";
+//     closeButton.addEventListener("click", () => {
+//         popup.style.display = "none";
+//     });
+
+//     popupContent.appendChild(closeButton);
+    
+//     popup.style.display = "flex";
+// }
+
+    
+            fetchRecipes(); 
+    
+    
+            function displaySelectedValues() {
+        const dietaryRestrictionsValue = document.getElementById("dietary-restrictions").value;
+        const allergiesValue = document.getElementById("allergies").value;
+        const spicinessValue = document.getElementById("spiciness").value;
+        const selectedIngredientsDiv = document.getElementById("selected-ingredients");
+        const selectedIngredients = selectedIngredientsDiv.textContent.trim().split(/\s*✕\s*/);
+    
+        let selectedValuesMessage = "<h2>Selected Filters:</h2>";
+    
+        if (dietaryRestrictionsValue) {
+            selectedValuesMessage += `<p>Dietary Restrictions: ${dietaryRestrictionsValue}</p>`;
+        }
+    
+        if (allergiesValue) {
+            selectedValuesMessage += `<p>Allergies: ${allergiesValue}</p>`;
+        }
+    
+        if (spicinessValue) {
+            selectedValuesMessage += `<p>Spiciness: ${spicinessValue}</p>`;
+        }
+    
+        if (selectedIngredients.length > 0) {
+            selectedValuesMessage += "<p>Selected Ingredients: " + selectedIngredients.join(", ") + "</p>";
+        }
+        openCustomPopup(selectedValuesMessage);
+    }
+    
+    
+    
+    async function frf() {
+        try {
+            const response = await fetch("/Recipe-gen/recipes.json");
+            if (response.ok) {
+                const recipesData = await response.json();
+                return recipesData.recipes;
+            } else {
+                console.error("Failed to fetch recipes data.");
+                return []; 
+            }
+        } catch (error) {
+            console.error("An error occurred while fetching recipes:", error);
+            return []; 
+        }
+    }
+//     async function filterRecipes() {
+//     const dValue = document.getElementById("dietary-restrictions").value;
+//     const aValue = document.getElementById("allergies").value;
+//     const sValue = document.getElementById("spiciness").value;
+//     const selectedIngredientsDiv = document.getElementById("selected-ingredients");
+//     const SiValue = selectedIngredientsDiv.textContent.trim().split(/\s*✕\s*/);
+
+//     const recipes = await frf();
+//     let matchingRecipe = null;
+
+//     for (const recipe of recipes) {
+//         if (
+//             (!dValue || recipe.dietary_restrictions === dValue) &&
+//             (!aValue || recipe.allergies === aValue) &&
+//             (!sValue || recipe.spiciness === sValue)
+//         ) {
+//             let allIngredientsMatch = true;
+
+//             for (let i = 0; i < SiValue.length; i++) {
+//                 if (!(SiValue[i] in recipe.ingredients)) {
+//                     allIngredientsMatch = false;
+//                     console.error(`Ingredient not found: ${SiValue[i]}`);
+//                     break;
+//                 }
+//             }
+
+//             if (allIngredientsMatch) {
+//                 matchingRecipe = recipe;
+//                 break; // Exit the loop when a matching recipe is found
+//             }
+//         }
+//     }
+
+//     if (matchingRecipe) {
+//         openCustomPopup(matchingRecipe, SiValue);
+//     } else {
+//         openCustomPopup1();
+//     }
+// }
+
+    
+    async function filterRecipes(){
+        const dValue = document.getElementById("dietary-restrictions").value;
+        const aValue = document.getElementById("allergies").value;
+        const sValue = document.getElementById("spiciness").value;
+        const selectedIngredientsDiv = document.getElementById("selected-ingredients");
+        const SiValue = selectedIngredientsDiv.textContent.trim().split(/\s*✕\s*/);
+      let content=SiValue+dValue+aValue+sValue;
+    //     openCustomPopup(SiValue[1]);
+        const recipes = await frf();
+        let co=0;
+        // console.log(recipe)
+        for (const recipe of recipes){
+            console.log(recipe);
+            if(recipe.dietary_restrictions==dValue && recipe.allergies==aValue && recipe.spiciness==sValue){
+                for (let i =0; i<(SiValue.length);i++){
+                    if (SiValue[i] in recipe.ingredients){
+                        continue;
+                    }
+                    else {
+                        break;
+                        co=2;
+                        
+                    }
+                }
+            if (co!=2){
+                openCustomPopup(recipe,SiValue);
+                co=1;
+                
+    
+                }     
+        }}
+        if (co==2){
+            openCustomPopup1();
+        }
+    
+    }
+    // && recipe.dietary_restrictions==dValue && recipe.allergies==aValue && recipe.spiciness==sValue
+    function openCustomPopup1() {
+    const popup = document.getElementById("custom-popup");
+    const popupContent = document.getElementById("popup-content");
+    
+    // Clear existing content
+    popupContent.innerHTML = '';
+    
+    // Create an image element
+    const image = document.createElement("img");
+    image.src = "food555.jpg"; // Replace with your image URL
+    image.alt = "Custom Image";
+    image.style.width = "250px"; // Set the desired width
+    image.style.height = "200px";
+    popupContent.appendChild(image);
+    }
+               </script>
+        
+    <script>
+        {
+    "recipes"; [
+      {
+        "title": "Vegan Italian Pasta",
+        "dietary_restrictions": "Vegan",
+        "cuisine": "Italian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["pasta", "tomatoes", "basil", "olive oil","garlic"],
+        "spiciness": "Mild",
+        "allergies": "soy",
+        "health_goals": ["Weight loss"],
+        "text": "1. Cook pasta according to package instructions.<br> 2. In a separate pan, sauté tomatoes and basil in olive oil.<br>3. Toss cooked pasta with the tomato and basil mixture. Serve."
+      },
+      {
+        "title": "Gluten-free Indian Curry",
+        "dietary_restrictions": "Gluten-free",
+        "cuisine": "Indian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["chicken", "curry spices", "coconut milk"],
+        "spiciness": "Medium",
+        "allergies": "soy",
+        "health_goals": ["Heart-healthy"],
+        "text": "1. Heat oil in a pan, add curry spices, and sauté until fragrant.<br>2. Add chicken and cook until browned.<br>3. Stir in coconut milk and simmer until the chicken is cooked through. Serve with rice."
+      },
+      {
+        "title": "Dairy-free Chinese Stir-fry",
+        "dietary_restrictions": "None",
+        "cuisine": "Chinese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["tofu", "broccoli", "soy sauce", "ginger"],
+        "spiciness": "Spicy",
+        "allergies": "soy",
+        "health_goals": ["Muscle gain"],
+        "text": "1. Heat oil in a pan, add tofu, and stir-fry until browned.<br>2. Add broccoli and ginger, and stir-fry for a few more minutes.<br>3. Pour soy sauce over the tofu and broccoli. Serve with rice."
+      },
+      {
+        "title": "Vegetarian Mediterranean Salad",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Mediterranean",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["quinoa", "cucumbers", "olives", "feta cheese"],
+        "spiciness": "Mild",
+        "allergies": "olives",
+        "health_goals": ["Diabetes-friendly"],
+        "text": "1. Cook quinoa according to package instructions and let it cool.<br>2. In a large bowl, combine cooked quinoa, cucumbers, olives, and crumbled feta cheese.<br>3. Drizzle with your favorite Mediterranean dressing and toss to combine."
+      },
+      {
+        "title": "Beef Stir-Fry",
+        "dietary_restrictions": "None",
+        "cuisine": "Chinese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["beef strips", "soy sauce", "hoisin sauce", "bell peppers", "broccoli", "garlic", "ginger", "sesame oil"],
+        "spiciness": "Medium",
+        "allergies": "soy",
+        "health_goals": ["Muscle gain"],
+        "text": "1. Heat sesame oil in a pan and stir-fry beef strips until browned. Remove from the pan.<br>2. In the same pan, sauté garlic and ginger. Add bell peppers and broccoli.<br>3. Return the beef to the pan and add soy sauce and hoisin sauce. Cook until heated through.\n4. Serve over rice."
+      },
+      
+      {
+        "title": "Classic Spaghetti Bolognese",
+        "dietary_restrictions": "None",
+        "cuisine": "Italian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["spaghetti", "ground beef", "onions", "garlic", "tomato sauce", "red wine", "oregano", "parmesan cheese"],
+        "spiciness": "Mild",
+        "allergies": "none",
+        "health_goals": [],
+        "text": "1. Cook spaghetti according to package instructions.<br>2. In a separate pan, brown ground beef, onions, and garlic.<br>3. Add tomato sauce, red wine, and oregano. Simmer until the sauce thickens.<br>4. Serve the sauce over cooked spaghetti, topped with parmesan cheese."
+      },
+      {
+        "title": "Vegetable Thai Green Curry",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Thai",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["tofu", "bell peppers", "zucchini", "green curry paste", "coconut milk", "bamboo shoots", "basil leaves"],
+        "spiciness": "Spicy",
+        "allergies": "none",
+        "health_goals": [],
+        "text": "1. In a pan, heat green curry paste and add tofu. Cook until tofu is browned.<br>2. Add sliced bell peppers, zucchini, bamboo shoots, and coconut milk. Simmer until vegetables are tender.<br>3. Stir in fresh basil leaves before serving over rice."
+      },
+      {
+        "title": "Homemade Margherita Pizza",
+        "dietary_restrictions": "Vegetarian", 
+        "cuisine": "Italian",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["pizza dough", "tomato sauce", "fresh mozzarella cheese", "basil leaves", "olive oil"],
+        "spiciness": "none",
+        "allergies":"none",
+        "health_goals": [],
+        "text": "1. Roll out pizza dough into your desired shape.<br>2. Spread tomato sauce evenly on the dough, leaving a border for the crust.<br>3. Add fresh mozzarella cheese and fresh basil leaves.<br>4. Drizzle with olive oil.<br>5. Bake in a preheated oven at 475°F (245°C) for 10-12 minutes or until the crust is golden."
+      },
+      {
+        "title": "Miso Soup with Tofu and Seaweed",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Japanese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["miso paste", "tofu", "seaweed", "green onions", "soy sauce"],
+        "spiciness": "none",
+        "allergies": "olives",
+        "health_goals": ["Heart-healthy"],
+        "text": "1. In a pot, combine miso paste and water. Bring to a simmer.<br>2. Add cubed tofu and seaweed. Simmer until tofu is heated through.<br>3. Garnish with sliced green onions and a dash of soy sauce."
+      }
+      
+    ]
+  }
+  
+    </script>
+
+    
+
+
+
+
+</body>
+</html>

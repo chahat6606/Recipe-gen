@@ -1,0 +1,236 @@
+/* .navbar {
+    background-color: #358B52;
+    font-family: poppins;
+}
+.nav-link {
+    
+    color: rgb(255, 255, 255);
+} */
+.navbar {
+  font-family: 'Poppins';
+  background-color: #358B52;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.center-container {
+  margin-top: 10%;
+  margin-left:10%;
+  
+}
+.center-container img {
+  width: 30%;
+  height: 70%;}
+
+.vertical-box {
+    position: absolute;
+    top: 30%;
+    right: 10%; 
+    padding: 10px; 
+    width: 35%; 
+    height: 35%; 
+    text-align: center;
+    font-family: 'Poppins';
+    font-size:large;
+    background-color: #f7f7f7;
+} 
+#section-heading-left {
+    font-family: 'Poppins'; 
+    color: black; 
+    padding: 7px ; 
+    font-size: 40px; 
+    margin-left: 10%;
+}
+.info-box-right {
+    float: right; /* Float the box to the right */
+    width: 35%; /* Adjust the width as needed */
+    background-color: #f7f7f7; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    font-family: 'Poppins'; /* Choose a suitable font */
+    font-size: 12px; /* Adjust the font size as needed */
+    line-height: 1.5;
+    margin-right: 10%;
+    margin-top: 5%; /* Adjust line height for readability */
+}
+#section-heading-left1 {
+  font-family: 'Poppins'; /* Background color */
+  color: black; /* Text color */
+  padding: 7px ; /* Add padding for spacing */
+  font-size: 40px; 
+  margin-left: 10%;/* Adjust font size as needed */
+}
+#section-heading-right {
+  font-family: 'Poppins'; /* Background color */
+  color: black; /* Text color */
+  padding: 7px ; /* Add padding for spacing */
+  font-size: 40px; 
+  
+  float:right;
+  margin-right: 10%;
+}
+#class-img-right img {
+    width: 35%; /* Ensure the image doesn't exceed the container width */
+    height: 250px ; /* Maintain the image's aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.info-box-left {
+    float: left; /* Float the box to the right */
+    width: 35%; /* Adjust the width as needed */
+    background-color: #f7f7f7; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    font-family: 'Poppins'; /* Choose a suitable font */
+    font-size: 12px; /* Adjust the font size as needed */
+    line-height: 1.5;
+    margin-left: 10%;
+    margin-top: 5%; /* Adjust line height for readability */
+}
+#class-img-left img {
+    width: 35%; /* Ensure the image doesn't exceed the container width */
+    height: 250px ; /* Maintain the image's aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+    margin-left: 10%;
+    margin-top: 5%;
+}
+  
+  #white-space {
+    height: 20px; /* Add white space after the section-heading */
+  }
+  #section-heading-centre {
+    font-family: 'Poppins'; /* Background color */
+    color: white; /* Text color */
+    background-color: #358B52;
+    padding: 7px ; /* Add padding for spacing */
+    font-size: 40px; 
+    text-align: center;
+  }
+  #inquiry-form-box {
+    text-align: left;
+    padding: 20px;
+    background-color: #358B52;
+    font-family: 'Poppins';
+    color: white;
+  }
+  
+  .input-container {
+    display: inline-block; /* Display form elements next to each other */
+    margin-right: 20px; 
+    border-radius: 5px;/* Add spacing between form elements */
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color:white;
+    color: #358B52;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  
+  #response {
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+  }
+  .containerrs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 1%;
+}
+
+.box, .long-box {
+    width: 50%;
+    background-color: #f7f7f7;
+    font-family: 'Poppins';
+    margin: 10px 0; /* Add margin to separate the boxes */
+    padding: 10px;
+}
+
+select, input {
+    width: 100%;
+    height: 30px; /* Adjust the height as needed */
+    margin: 5px 0;
+    background-color: #f7f7f7;
+    border: none;
+}
+
+.long-box {
+    width: 50%;
+    margin: 10px 0; /* Add margin to separate the boxes */
+}
+
+label {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed for label alignment */
+}
+
+
+select, input {
+    width: 100%;
+    height: 100%;
+    background-color:#ddd ;
+    border: none;
+}
+
+
+
+
+.custom-button {
+  background-color:white;
+    color: #358B52;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 40%;
+    font-family: 'Poppins';
+    border-radius: 10px;
+}
+
+#custom-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#popup-content button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

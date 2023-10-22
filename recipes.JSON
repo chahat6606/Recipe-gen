@@ -1,0 +1,106 @@
+{
+    "recipes": [
+      {
+        "title": "Vegan Italian Pasta",
+        "dietary_restrictions": "Vegan",
+        "cuisine": "Italian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["pasta", "tomatoes", "basil", "olive oil","garlic"],
+        "spiciness": "Mild",
+        "allergies": "soy",
+        "health_goals": ["Weight loss"],
+        "text": "1. Cook pasta according to package instructions.<br> 2. In a separate pan, sauté tomatoes and basil in olive oil.<br>3. Toss cooked pasta with the tomato and basil mixture. Serve."
+      },
+      {
+        "title": "Gluten-free Indian Curry",
+        "dietary_restrictions": "Gluten-free",
+        "cuisine": "Indian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["chicken", "curry spices", "coconut milk"],
+        "spiciness": "Medium",
+        "allergies": "soy",
+        "health_goals": ["Heart-healthy"],
+        "text": "1. Heat oil in a pan, add curry spices, and sauté until fragrant.<br>2. Add chicken and cook until browned.<br>3. Stir in coconut milk and simmer until the chicken is cooked through. Serve with rice."
+      },
+      {
+        "title": "Dairy-free Chinese Stir-fry",
+        "dietary_restrictions": "None",
+        "cuisine": "Chinese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["tofu", "broccoli", "soy sauce", "ginger"],
+        "spiciness": "Spicy",
+        "allergies": "soy",
+        "health_goals": ["Muscle gain"],
+        "text": "1. Heat oil in a pan, add tofu, and stir-fry until browned.<br>2. Add broccoli and ginger, and stir-fry for a few more minutes.<br>3. Pour soy sauce over the tofu and broccoli. Serve with rice."
+      },
+      {
+        "title": "Vegetarian Mediterranean Salad",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Mediterranean",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["quinoa", "cucumbers", "olives", "feta cheese"],
+        "spiciness": "Mild",
+        "allergies": "olives",
+        "health_goals": ["Diabetes-friendly"],
+        "text": "1. Cook quinoa according to package instructions and let it cool.<br>2. In a large bowl, combine cooked quinoa, cucumbers, olives, and crumbled feta cheese.<br>3. Drizzle with your favorite Mediterranean dressing and toss to combine."
+      },
+      {
+        "title": "Beef Stir-Fry",
+        "dietary_restrictions": "None",
+        "cuisine": "Chinese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["beef strips", "soy sauce", "hoisin sauce", "bell peppers", "broccoli", "garlic", "ginger", "sesame oil"],
+        "spiciness": "Medium",
+        "allergies": "soy",
+        "health_goals": ["Muscle gain"],
+        "text": "1. Heat sesame oil in a pan and stir-fry beef strips until browned. Remove from the pan.<br>2. In the same pan, sauté garlic and ginger. Add bell peppers and broccoli.<br>3. Return the beef to the pan and add soy sauce and hoisin sauce. Cook until heated through.\n4. Serve over rice."
+      },
+      
+      {
+        "title": "Classic Spaghetti Bolognese",
+        "dietary_restrictions": "None",
+        "cuisine": "Italian",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["spaghetti", "ground beef", "onions", "garlic", "tomato sauce", "red wine", "oregano", "parmesan cheese"],
+        "spiciness": "Mild",
+        "allergies": "none",
+        "health_goals": [],
+        "text": "1. Cook spaghetti according to package instructions.<br>2. In a separate pan, brown ground beef, onions, and garlic.<br>3. Add tomato sauce, red wine, and oregano. Simmer until the sauce thickens.<br>4. Serve the sauce over cooked spaghetti, topped with parmesan cheese."
+      },
+      {
+        "title": "Vegetable Thai Green Curry",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Thai",
+        "cooking_time": "30-60 minutes",
+        "ingredients": ["tofu", "bell peppers", "zucchini", "green curry paste", "coconut milk", "bamboo shoots", "basil leaves"],
+        "spiciness": "Spicy",
+        "allergies": "none",
+        "health_goals": [],
+        "text": "1. In a pan, heat green curry paste and add tofu. Cook until tofu is browned.<br>2. Add sliced bell peppers, zucchini, bamboo shoots, and coconut milk. Simmer until vegetables are tender.<br>3. Stir in fresh basil leaves before serving over rice."
+      },
+      {
+        "title": "Homemade Margherita Pizza",
+        "dietary_restrictions": "Vegetarian", 
+        "cuisine": "Italian",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["pizza dough", "tomato sauce", "fresh mozzarella cheese", "basil leaves", "olive oil"],
+        "spiciness": "none",
+        "allergies":"none",
+        "health_goals": [],
+        "text": "1. Roll out pizza dough into your desired shape.<br>2. Spread tomato sauce evenly on the dough, leaving a border for the crust.<br>3. Add fresh mozzarella cheese and fresh basil leaves.<br>4. Drizzle with olive oil.<br>5. Bake in a preheated oven at 475°F (245°C) for 10-12 minutes or until the crust is golden."
+      },
+      {
+        "title": "Miso Soup with Tofu and Seaweed",
+        "dietary_restrictions": "Vegetarian",
+        "cuisine": "Japanese",
+        "cooking_time": "Less than 30 minutes",
+        "ingredients": ["miso paste", "tofu", "seaweed", "green onions", "soy sauce"],
+        "spiciness": "none",
+        "allergies": "olives",
+        "health_goals": ["Heart-healthy"],
+        "text": "1. In a pot, combine miso paste and water. Bring to a simmer.<br>2. Add cubed tofu and seaweed. Simmer until tofu is heated through.<br>3. Garnish with sliced green onions and a dash of soy sauce."
+      }
+      
+    ]
+  }
+  
