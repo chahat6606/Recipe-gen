@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -148,7 +148,7 @@
     
             async function fetchRecipes() {
                 try {
-                    const response = await fetch("/recipes.json");
+                    const response = await fetch("/Recipe-gen/recipes.json");
                     if (response.ok) {
                         recipesData = await response.json();
                         populateDropdowns(recipesData.recipes);
@@ -360,7 +360,7 @@ popupContent.appendChild(extraIngredientsList);
     
     async function frf() {
         try {
-            const response = await fetch("/recipes.json");
+           const response = await fetch("/Recipe-gen/recipes.json");
             if (response.ok) {
                 const recipesData = await response.json();
                 return recipesData.recipes;
